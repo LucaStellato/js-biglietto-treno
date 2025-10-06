@@ -5,5 +5,13 @@ Stabilire e comunicare chi ha vinto secondo le regole di pari o dispadri.
 */
 
 const even_odd = prompt("SFIDAMI!  Scegli... Pari o dispari");
-const person = prompt("BRAVO!  Ora scegli un numero tra 1 e 9");
+const player = prompt("BRAVO!  Ora scegli un numero tra 1 e 9");
 const cpu = Math.floor(Math.random() * 10) + 1; 
+
+const sum = player + cpu;
+
+if(sum%2==0){
+    if(even_odd===pari){
+        alert("AAA MI HAI BATTUTO")
+    }
+}
