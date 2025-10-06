@@ -32,11 +32,13 @@ if(eta < 18){
     // if age < 18 apply discount u18 (under 18) 
     const price_final = price * (1 - discount_u18 / 100);
     // view on screen the alert with price discounted
-    alert(`il prezzo sacontato é di: € ${price_final.toFixed(2)} ` )
+    alert(`il prezzo scontato é di: € ${price_final.toFixed(2)} ` )
 //condition in case of age >= 65
 }else if(eta >= 65) {
+     // if age >= 65 apply discount o65 (over 65)
     const price_final = price * (1 - discount_o65 / 100); 
-     alert(`il prezzo sacontato é di: € ${price_final.toFixed(2)} `)
+     // view on screen the alert with price discounted
+     alert(`il prezzo scontato é di: € ${price_final.toFixed(2)} `)
 }else{
      alert(`il prezzo  é di: € ${price.toFixed(2)} ` )
 }
