@@ -25,6 +25,14 @@ const discount_o65 = 40;
 const eta = prompt("inserire etá passeggero");
 const km_togo = prompt("inserire quanti km vuoi percorrere");
 
+const price = km_togo * rate_km;
+
+if(eta < 18){
+    const price_final = (price * discount_u18) / 100; 
+}
+
+
+
 
 
 
