@@ -28,8 +28,9 @@ const km_togo = prompt("inserire quanti km vuoi percorrere");
 const price = km_togo * rate_km;
 
 if(eta < 18){
-    const price_final = Math.round(price * (1 - discount_u18 / 100) )
-    alert(`il prezzo sacontato é di: ${price_final} ` )
+    const price_final = price * (1 - discount_u18 / 100);
+    const rounded = price_final.toFixed(2);
+    alert(`il prezzo sacontato é di: ${rounded} ` )
 }else if(eta >= 65) {
     const price_final = (price * discount_o65) / 100; 
      alert(`il prezzo sacontato é di: ${price_final} `)
