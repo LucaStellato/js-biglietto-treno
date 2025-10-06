@@ -39,7 +39,9 @@ if(eta < 18){
     const price_final = price * (1 - discount_o65 / 100); 
      // view on screen the alert with price discounted
      alert(`il prezzo scontato é di: € ${price_final.toFixed(2)} `)
+//if none of these conditions apply then:
 }else{
+    // view on screen the alert with price NOT discounted
      alert(`il prezzo  é di: € ${price.toFixed(2)} ` )
 }
 
