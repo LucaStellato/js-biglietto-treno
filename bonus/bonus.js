@@ -6,16 +6,17 @@ Stabilire e comunicare chi ha vinto secondo le regole di pari o dispadri.
 //declaration variable
 const even_odd = prompt("SFIDAMI!  Scegli... Pari o dispari");
 const player = prompt("BRAVO!  Ora scegli un numero tra 1 e 9");
+const numInt = parseInt(player);
 const cpu = Math.floor(Math.random() * 10) + 1; 
 
 //sum the number cpu a player
-const somma = player + cpu;
+const somma = numInt + cpu;
 
 
 //condition in case sum/2===0 
 if(somma%2===0){
     // and if player choose even
-    if(even_odd===("pari")){
+    if (even_odd=="pari"){
         //player win
         alert("AAA MI HAI BATTUTO");
     }else{
