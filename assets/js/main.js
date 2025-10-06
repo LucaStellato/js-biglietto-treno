@@ -29,8 +29,7 @@ const price = km_togo * rate_km;
 
 if(eta < 18){
     const price_final = price * (1 - discount_u18 / 100);
-    const rounded = parseFloat(price_final.toFixed(2));
-    alert(`il prezzo sacontato é di: ${rounded} ` )
+    alert(`il prezzo sacontato é di: ${price_final.toFixed(2)} ` )
 }else if(eta >= 65) {
     const price_final = (price * discount_o65) / 100; 
      alert(`il prezzo sacontato é di: ${price_final} `)
