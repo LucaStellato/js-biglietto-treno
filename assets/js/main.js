@@ -31,7 +31,7 @@ if(eta < 18){
     const price_final = price * (1 - discount_u18 / 100);
     alert(`il prezzo sacontato é di: ${price_final.toFixed(2)} ` )
 }else if(eta >= 65) {
-    const price_final = (price * discount_o65) / 100; 
+    const price_final = price * (1 - discount_o65 / 100); 
      alert(`il prezzo sacontato é di: ${price_final} `)
 }else{
      alert(`il prezzo  é di: ${price} ` )
