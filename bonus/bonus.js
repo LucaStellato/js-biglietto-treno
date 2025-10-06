@@ -16,7 +16,7 @@ const somma = numInt + cpu;
 //condition in case sum/2===0 
 if(somma%2===0){
     // and if player choose even
-    if (even_odd=="pari"){
+    if (even_odd=== "pari"){
         //player win
         alert("AAA MI HAI BATTUTO");
     }else{
