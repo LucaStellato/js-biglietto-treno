@@ -18,18 +18,22 @@ per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 */
 
 
-
+// variable declaration
 const rate_km = 0.21;
 const discount_u18 = 20;
 const discount_o65 = 40;
 const eta = prompt("inserire etá passeggero");
 const km_togo = prompt("inserire quanti km vuoi percorrere");
-
+//price calculation with km
 const price = km_togo * rate_km;
 
+//condition in case of age < 18
 if(eta < 18){
+    // if age < 18 apply discount u18 (under 18) 
     const price_final = price * (1 - discount_u18 / 100);
+    // view on screen the alert with price discounted
     alert(`il prezzo sacontato é di: € ${price_final.toFixed(2)} ` )
+//condition in case of age >= 65
 }else if(eta >= 65) {
     const price_final = price * (1 - discount_o65 / 100); 
      alert(`il prezzo sacontato é di: € ${price_final.toFixed(2)} `)
