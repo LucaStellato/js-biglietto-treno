@@ -29,6 +29,11 @@ const price = km_togo * rate_km;
 
 if(eta < 18){
     const price_final = (price * discount_u18) / 100; 
+    
+}else if(eta >= 65) {
+    const price_final = (price * discount_o65) / 100; 
+}else{
+
 }
 
 
